@@ -237,11 +237,3 @@ void toMorse(char *string){
 	}
 
 }
-
-
-
-
-
-
-
-
