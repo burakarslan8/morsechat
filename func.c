@@ -37,7 +37,7 @@ static const char alphabet[26]= {'a','b','c','d','e','f','g','h','i','j','k','l'
 static const char alphabet_c[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
 void printString(char *string){
-	for(int i=0; i<100; i++){
+	for(int i=0; i<200; i++){
 		if(string[i]=='\n'){
 			break;
 		}
@@ -47,7 +47,7 @@ void printString(char *string){
 }
 
 void scanString(char *string){
-	for(int i=0; i<100;i++){
+	for(int i=0; i<200;i++){
 		scanf("%c",&string[i]);
 		if(string[i]=='\n'){
 			break;
@@ -218,7 +218,7 @@ static void playMorse(char zeichen){
 	}
 }
 void toMorse(char *string){
-	for(int i=0; i<100; i++){
+	for(int i=0; i<200; i++){
 		for(int j=0; j<26; j++){
 			if(string[i]==alphabet[j] || string[i]==alphabet_c[j]){
 				printf("%s ",morse[j]);

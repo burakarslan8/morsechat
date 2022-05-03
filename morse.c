@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "p_s.h"
+#include "func.h"
 
 int main(void){
-	char input[100];	
+	char input[200];	
 	printf("********MorseChat********\n");
 	printf("Geben Sie den zu übersetzenden Text ein(. eingeben um das Programm zu beenden.)\n");
 	do{	

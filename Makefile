@@ -2,14 +2,14 @@
 
 all: morse
 
-morse: morse.o p_s.o
-	gcc morse.o p_s.o -o morse
+morse: morse.o func.o
+	gcc morse.o func.o -o morse
 
 morse.o: morse.c
 	gcc -c morse.c
 
-p_s.o: p_s.c
-	gcc -c p_s.c
+func.o: func.c
+	gcc -c func.c
 
 run:
 	./morse
