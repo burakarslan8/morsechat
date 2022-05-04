@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-
 static const char *morse[] = {
     ".-",   //A
     "-...", //B
