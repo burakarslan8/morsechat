@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <Windows.h>
-#include <MMSystem.h>
+#include "header.h"
 
 static const char *morse[] = {
     ".-",   //A
@@ -58,7 +54,7 @@ void scanString(char *string){
 	
 }
 
-static void playMorse(char zeichen){
+void playMorse(char zeichen){
 	switch(zeichen){
 		case 'a':
 			PlaySound(TEXT("Audio\\a.wav"), NULL, SND_SYNC);

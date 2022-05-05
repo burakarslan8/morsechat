@@ -2,17 +2,11 @@
 
 all: morse
 
-morse: morse.o func.o
-	gcc morse.o func.o -o morse
-
-morse.o: morse.c
-	gcc -c morse.c
-
-func.o: func.c
-	gcc -c func.c
+morse: main.c func.c
+	gcc main.c func.c -o morse
 
 run:
 	./morse
 
-clean:
-	rm *.o
+clean: 
+	rm morse

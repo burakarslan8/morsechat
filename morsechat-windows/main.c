@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "func.h"
+#include "header.h"
 
 int main(void){
 	char input[200];	
