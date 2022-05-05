@@ -225,7 +225,7 @@ void toMorse(char *string){
 			}
 		}
 		if(string[i]== ' '){
-			printf("/");
+			printf("/ ");
 		}
 		else if(string[i]=='.'){
 			break;
