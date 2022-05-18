@@ -1,12 +1,12 @@
 # MAKEFILE
 
-all: morse
+all: morsechat
 
-morse: main.c func.c
-	gcc main.c func.c -o morse
+morsechat: main.c func.c
+	gcc main.c func.c -o morsechat
 
 run:
-	./morse
+	./morsechat
 
 clean: 
-	rm morse
+	rm morsechat
