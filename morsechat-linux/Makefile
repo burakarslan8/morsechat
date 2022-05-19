@@ -7,6 +7,9 @@ morsechat: main.c func.c
 
 run:
 	./morsechat
+	
+help: 
+	./morsechat --help
 
 clean: 
 	rm morsechat
