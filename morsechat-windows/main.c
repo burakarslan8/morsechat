@@ -1,11 +1,7 @@
 #include "header.h"
 
 int main(int argc, char *argv[]){
-	printf("		    ----------------\n");
-	printf("		   -----MorseChat----\n");
-	printf("		    ----------------\n");
 	if(argc==3){
-
 		if(!strcmp(argv[1],"--text")){  // Den eingegebenen Text übersetzen.
 			char copy[200];			// ich bin einigen Fehlern begegnet, deswegen wurde argv[2] kopiert.
 			strcpy(copy, argv[2]);
@@ -27,6 +23,11 @@ int main(int argc, char *argv[]){
 		}
 	}
 	else if(argc==2 && !strcmp(argv[1], "--help")){	// --help Option
+	
+			printf("		    ----------------\n");
+			printf("		   -----MorseChat----\n");
+			printf("		    ----------------\n");
+			
 			printf("Optionen:\n");
 			printf("\t--text\teinen Text eingeben und uebersetzen\n");
 			printf("\t\t    z.B: ./morsechat --text 'Hallo Welt'\n\n");

@@ -1,15 +1,8 @@
 #include "header.h"
 
 int main(int argc, char *argv[]){
-	printf("		   --_____--\n");
-	printf("		  --_______--\n");
-	printf("		 --_________--\n");
-	printf("		--|MorseChat|--\n");
-	printf("		 --¯¯¯¯¯¯¯¯¯--\n");
-	printf("		  --¯¯¯¯¯¯¯--\n");
-	printf("		   --¯¯¯¯¯--\n");
-	if(argc==3){
 
+	if(argc==3){
 		if(!strcmp(argv[1], "--text")){  // Den eingegebenen Text übersetzen.
 			toMorse(argv[2]);
 			printf("\n");
@@ -29,6 +22,14 @@ int main(int argc, char *argv[]){
 		}
 	}
 	else if(argc==2 && !strcmp(argv[1], "--help")){	// --help Option
+			printf("		   --_____--\n");
+			printf("		  --_______--\n");
+			printf("		 --_________--\n");
+			printf("		--|MorseChat|--\n");
+			printf("		 --¯¯¯¯¯¯¯¯¯--\n");
+			printf("		  --¯¯¯¯¯¯¯--\n");
+			printf("		   --¯¯¯¯¯--\n");
+			
 			printf("Optionen:\n");
 			printf("\t--text\teinen Text eingeben und uebersetzen\n");
 			printf("\t\t    z.B: ./morsechat --text 'Hallo Welt'\n\n");
